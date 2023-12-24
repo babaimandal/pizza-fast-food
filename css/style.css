@@ -1,0 +1,2157 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  --primary-color: #E22454;
+  --secondary-color: #88B84B;
+  --background-color: #233645;
+  --text-color: #223645;
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
+}
+ul,li{
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.primary-button {
+    padding: 10px 12px;
+    background-color: var(--button-color);
+    border-radius: 5px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* ********* >>>>> HEADER // BANNER >>>>>> ******** */
+
+
+
+
+
+
+.banner-wrapper{
+    height: 700px;
+    background-image:   url(../images/pizza2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    isolation: isolate;
+}
+.banner-wrapper::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(324deg,rgb(0 0 0) 4%,transparent);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.banner-wrapper .banner-content{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-wrapper .banner-content .banner-text {
+    text-align: center;
+    max-width: 827px;
+}
+.banner-wrapper .banner-content .banner-text h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 111px;
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+}
+.banner-wrapper .banner-content .banner-text p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+
+/*body.scroll-down header .header-wrapper{
+    transform: translate3d(0, -100%, 0);
+}
+ body.scroll-up header .header-wrapper{
+    background: #9a0000;
+    border-bottom: 1px solid #ddd;
+ }*/
+  .banner-wrapper header {
+    
+  }
+ .banner-wrapper .header-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 70px;
+    border-bottom: 1px solid #ffffffc2;
+/*    position: fixed;*/
+    
+    transition: all  0.5s ;
+}
+ .banner-wrapper .header-wrapper .mobile-menu {
+    display: none;
+ }
+ .banner-wrapper .header-wrapper .mobile-menu img{
+
+ }
+.banner-wrapper .header-wrapper .lt-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 107px;
+}
+.banner-wrapper .header-wrapper .nav-block nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.banner-wrapper .header-wrapper .nav-block nav ul li a {
+    color: #fff;
+    font-size: 21px;
+    font-weight: 600;
+    /* font-family: 'Poppins', sans-serif; */
+}
+.banner-wrapper .header-wrapper .logo-block a {
+    font-weight: 900;
+    color: #fff;
+    padding-block: 35px;
+}
+.banner-wrapper .header-wrapper .order-button button{
+    border-radius: 4px;
+    padding-inline: 15px;
+    padding-block: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all ease 0.5s;
+}
+.banner-wrapper .header-wrapper .order-button button:active{
+    transform: scale(0.96);
+}
+.banner-wrapper .header-wrapper .order-button button:hover{
+    background-color: #FE0000;
+    scale: 0.96;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* ********* >>>>> PIZZA MENU >>>>>> ******** */
+
+.pizza-menu-wrapper {
+    background-color: #040507;
+    padding-block-start: 50px;
+    padding-block-end: 85px;
+}
+.pizza-menu-wrapper .pizza-menu-heading{
+    text-align: center;
+}
+.pizza-menu-wrapper .pizza-menu-heading p{
+    color: #F8C189;
+    font-size: 15px;
+    font-weight: 500;
+     font-family: 'Poppins', sans-serif; 
+     margin: 0;
+}
+.pizza-menu-wrapper .pizza-menu-heading h2{
+    color: #fff;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+}
+
+
+/* >>>>>>>>> Margherita >>>>>>>>> */
+
+.margherit-pizza-wrapper {
+    background-color: #040507;
+    position: relative;
+    padding-block-end: 60px;
+    
+}
+.margherit-pizza-wrapper .image-block {
+    width: 100%;
+    height: auto;
+}
+.margherit-pizza-wrapper .image-block img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.margherit-pizza-wrapper .text-block {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ .margherit-pizza-wrapper .text-block h2{
+    font-size: 60px;
+    color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+}
+ .margherit-pizza-wrapper .text-block p {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    max-width: 430px;
+    padding-block-end: 57px;
+    padding-block-start: 28px;
+}
+
+ .margherit-pizza-wrapper .price .top-block {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+ .margherit-pizza-wrapper .price .top-block .lt span {
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 129px;
+    display: block;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+ .margherit-pizza-wrapper .top-block  .rt  p {
+    font-size: 46px;
+    color: white;
+    font-weight: 600;
+    padding: 0;
+}
+
+
+
+
+.margherit-pizza-wrapper .price .bottom-block {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+ .margherit-pizza-wrapper .price .bottom-block .lt span {
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 129px;
+    display: block;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+ .margherit-pizza-wrapper .bottom-block  .rt  p {
+    font-size: 46px;
+    color: white;
+    font-weight: 600;
+    padding: 0;
+}
+.margherit-pizza-wrapper .design-element .triangle-pizza{
+    position: absolute;
+    top: 0;
+    right: 0;
+ }
+ .margherit-pizza-wrapper .design-element .triangle-pizza img{
+    overflow-x: hidden;
+    width: 167px;
+
+ }
+.margherit-pizza-wrapper .design-element .rounded-three-pizza {
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+ .margherit-pizza-wrapper .design-element .rounded-three-pizza img{
+    overflow-x: hidden;
+    width: 167px;
+
+ }
+.margherit-pizza-wrapper .design-element .rounded-single-pizza {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+ .margherit-pizza-wrapper .design-element .rounded-single-pizza img{
+    overflow-x: hidden;
+    width: 100px;
+
+ }
+
+/* >>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>> classic-burrata  >>>>>>>>>>>> */
+
+.pizza-menu-wrapper {
+    background-color: #040507;
+    padding-block-start: 50px;
+    padding-block-end: 85px;
+    
+}
+.pizza-menu-wrapper .pizza-menu-heading{
+    text-align: center;
+}
+.pizza-menu-wrapper .pizza-menu-heading p{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+     font-family: 'Poppins', sans-serif; 
+     margin: 0;
+}
+.pizza-menu-wrapper .pizza-menu-heading h2{
+    color: #fff;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+}
+.classic-burrata-pizza-wrapper {
+    background-color: #040507;
+    position: relative;
+    padding-block-end: 60px;
+
+    
+}
+.classic-burrata-pizza-wrapper .image-block {
+    width: 100%;
+    height: auto;
+}
+.classic-burrata-pizza-wrapper .image-block img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.classic-burrata-pizza-wrapper .text-block {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ .classic-burrata-pizza-wrapper .text-block h2{
+    font-size: 60px;
+    color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+}
+ .classic-burrata-pizza-wrapper .text-block p {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    max-width: 430px;
+    padding-block-end: 57px;
+    padding-block-start: 28px;
+}
+
+ .classic-burrata-pizza-wrapper .price .top-block {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+ .classic-burrata-pizza-wrapper .price .top-block .lt span {
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 129px;
+    display: block;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+ .classic-burrata-pizza-wrapper .top-block  .rt  p {
+    font-size: 46px;
+    color: white;
+    font-weight: 600;
+    padding: 0;
+}
+.classic-burrata-pizza-wrapper .price .bottom-block {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+ .classic-burrata-pizza-wrapper .price .bottom-block .lt span {
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 129px;
+    display: block;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+ .classic-burrata-pizza-wrapper .bottom-block  .rt  p {
+    font-size: 46px;
+    color: white;
+    font-weight: 600;
+    padding: 0;
+}
+
+
+
+
+
+
+
+.classic-burrata-pizza-wrapper .design-element .triangle-pizza{
+    position: absolute;
+    top: 0;
+    right: 0;
+ }
+ .classic-burrata-pizza-wrapper .design-element .triangle-pizza img{
+    overflow-x: hidden;
+    width: 167px;
+
+ }
+.classic-burrata-pizza-wrapper .design-element .rounded-three-pizza {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+ .classic-burrata-pizza-wrapper .design-element .rounded-three-pizza img{
+    overflow-x: hidden;
+    width: 167px;
+    opacity: 0.2;
+ }
+.classic-burrata-pizza-wrapper .design-element .rounded-single-pizza {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.classic-burrata-pizza-wrapper .design-element .rounded-single-pizza img {
+    overflow-x: hidden;
+    width: 100px;
+    opacity: 0.2;
+}
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>> Capricciosa  >>>>>>>>>>>> */
+
+.capricciosa-pizza-wrapper {
+    background-color: #040507;
+    position: relative;
+    padding-block-end: 60px;
+    
+}
+.capricciosa-pizza-wrapper .image-block {
+    width: 100%;
+    height: auto;
+}
+.capricciosa-pizza-wrapper .image-block img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.capricciosa-pizza-wrapper .text-block {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ .capricciosa-pizza-wrapper .text-block h2{
+    font-size: 60px;
+    color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+}
+ .capricciosa-pizza-wrapper .text-block p {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    max-width: 430px;
+    padding-block-end: 57px;
+    padding-block-start: 28px;
+}
+
+ .capricciosa-pizza-wrapper .price .top-block {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+ .capricciosa-pizza-wrapper .price .top-block .lt span {
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 129px;
+    display: block;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+ .capricciosa-pizza-wrapper .top-block  .rt  p {
+    font-size: 46px;
+    color: white;
+    font-weight: 600;
+    padding: 0;
+}
+.capricciosa-pizza-wrapper .price .bottom-block {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+ .capricciosa-pizza-wrapper .price .bottom-block .lt span {
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 129px;
+    display: block;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+ .capricciosa-pizza-wrapper .bottom-block  .rt  p {
+    font-size: 46px;
+    color: white;
+    font-weight: 600;
+    padding: 0;
+}
+
+
+
+
+
+
+
+.capricciosa-pizza-wrapper .design-element .triangle-pizza{
+    position: absolute;
+    top: 0;
+    right: 0;
+ }
+ .capricciosa-pizza-wrapper .design-element .triangle-pizza img {
+    overflow-x: hidden;
+    width: 167px;
+    opacity: 0.3;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>> Siciliana  >>>>>>>>>>>> */
+
+.siciliana-pizza-wrapper {
+    background-color: #040507;
+    position: relative;
+    padding-block-end: 90px;
+}
+.siciliana-pizza-wrapper .image-block {
+    width: 100%;
+    height: auto;
+}
+.siciliana-pizza-wrapper .image-block img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.siciliana-pizza-wrapper .text-block {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ .siciliana-pizza-wrapper .text-block h2{
+    font-size: 60px;
+    color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+}
+ .siciliana-pizza-wrapper .text-block p {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    max-width: 430px;
+    padding-block-end: 57px;
+    padding-block-start: 28px;
+}
+
+ .siciliana-pizza-wrapper .price .top-block {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+ .siciliana-pizza-wrapper .price .top-block .lt span {
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 129px;
+    display: block;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+ .siciliana-pizza-wrapper .top-block  .rt  p {
+    font-size: 46px;
+    color: white;
+    font-weight: 600;
+    padding: 0;
+}
+.siciliana-pizza-wrapper .price .bottom-block {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+ .siciliana-pizza-wrapper .price .bottom-block .lt span {
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 129px;
+    display: block;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+ .siciliana-pizza-wrapper .bottom-block  .rt  p {
+    font-size: 46px;
+    color: white;
+    font-weight: 600;
+    padding: 0;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>> POPULAR ITEMAS  >>>>>>>>>>>> */
+
+.popular-items-wrapper{
+    background-color: #040507;
+}
+.popular-items-wrapper .popular-items-heading{
+    text-align: center;
+    margin-block-end: 75px;
+}
+.popular-items-wrapper .popular-items-heading p{
+    color: #F8C189;
+    font-size: 15px;
+    font-weight: 500;
+     font-family: 'Poppins', sans-serif; 
+     margin: 0;
+}
+.popular-items-wrapper .popular-items-heading h2{
+    color: #fff;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+}
+.popular-items-wrapper .image-block {
+    height: 303px;
+    background: red;
+}
+.popular-items-wrapper .image-block img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 3px;
+    height: 100%;
+}
+.popular-items-wrapper .text-block{
+    margin-block-start: 25px;
+}
+.popular-items-wrapper .text-block .items-name-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block-end: 10px;
+}
+.popular-items-wrapper .text-block .items-name-price .lt h2{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+     font-family: 'Poppins', sans-serif;
+     margin: 0; 
+}
+.popular-items-wrapper .text-block .items-name-price .rt h3{
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+     font-family: 'Poppins', sans-serif; 
+     margin: 0;
+}
+.popular-items-wrapper .text-block  p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>> THE FULL MENU  >>>>>>>>>>>> */
+
+.the-full-menu-wrapper{
+    background-color: #040507;
+}
+
+.the-full-menu-wrapper .the-full-menu-heading {
+    text-align: center;
+    margin-block-end: 75px;
+    padding-block-start: 100px;
+}
+.the-full-menu-wrapper .the-full-menu-heading p{
+    color: #F8C189;
+    font-size: 15px;
+    font-weight: 500;
+     font-family: 'Poppins', sans-serif; 
+     margin: 0;
+}
+.the-full-menu-wrapper .the-full-menu-heading h2{
+    color: #fff;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+}
+.the-full-menu-wrapper .menu-starters h3 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 50px;
+    font-family: 'Cormorant Garamond', serif;
+    margin-block-end: 50px;
+}
+.the-full-menu-wrapper .menu-starters .menu-starters-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block-start: 36px;
+}
+.the-full-menu-wrapper .menu-starters .menu-starters-items .starters-items{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.the-full-menu-wrapper .menu-starters .menu-starters-items .starters-items .lt .starters-iteams-image {
+    width: 71px;
+    aspect-ratio: 1/1;
+    background-color: #ddd;
+    border-radius: 50%;
+} 
+.the-full-menu-wrapper .menu-starters .menu-starters-items .starters-items .lt .starters-iteams-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+.the-full-menu-wrapper .menu-starters .menu-starters-items .starters-items .rt h4 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    margin-block-end: 11px;
+}
+.the-full-menu-wrapper .menu-starters .menu-starters-items .starters-items .rt h5 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.the-full-menu-wrapper .menu-starters .menu-starters-items .starters-price p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 23px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.the-full-menu-wrapper .the-full-menu-order {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-block-end: 100px;
+    margin-block-start: 68px;
+}
+.the-full-menu-wrapper .the-full-menu-order a{
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid #F8C189;
+    padding-inline: 10px;
+    padding-block: 8px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.the-full-menu-wrapper .the-full-menu-order a:hover{
+    background-color: #FE0000;
+    scale: 0.96;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>> VIDEO BLOCK  >>>>>>>>>>>> */
+
+.video-block-wrapper {
+    height: 500px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( rgb(0 0 0 / 70%),rgb(0, 0, 0, 0.5) ), url(../images/05.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.video-block-wrapper img{
+    transition: 0.5s;
+}
+.video-block-wrapper img:hover{
+    scale: 0.96;
+}
+
+.nutrition-and-taste-wrapper {
+    background-color: #040507;
+    padding-block-end: 184px;
+    padding-block-start: 65px;
+}
+
+.nutrition-and-taste-wrapper .nutrition-and-taste-heading {
+    margin-block-end: 8px;
+}
+.nutrition-and-taste-wrapper .nutrition-and-taste-heading p{
+    color: #F8C189;
+    font-size: 15px;
+    font-weight: 500;
+     font-family: 'Poppins', sans-serif; 
+     margin: 0;
+}
+.nutrition-and-taste-wrapper .nutrition-and-taste-heading h2 {
+    color: #fff;
+    font-size: 64px;
+    font-weight: 700;
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+}
+.nutrition-and-taste-wrapper .text-block {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nutrition-and-taste-wrapper .text-block h3 {
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+    max-width: 362px;
+    margin-block-end: 22px;
+}
+.nutrition-and-taste-wrapper .text-block a{
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid #F8C189;
+    padding-inline: 10px;
+    padding-block: 8px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.nutrition-and-taste-wrapper .image-block{
+    position: relative;
+}
+.nutrition-and-taste-wrapper .image-block .image-1{
+   height: 400px;
+   width: 70%;
+   background-color: red;
+   background-image: url(../images/01236.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-inline-end: 10px;
+}
+.nutrition-and-taste-wrapper .image-block .image-2 {
+    height: 350px;
+    width: 49%;
+    background-color: yellow;
+    position: absolute;
+    top: 164px;
+    right: 77px;
+    background-image: url(../images/0123.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-inline-end: 10px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>> WHERE TO FIND US  >>>>>>>>>>>> */
+
+.whare-to-find-us-wrapper {
+    background-color: #040507;
+    padding-block: 100px;
+}
+.whare-to-find-us-wrapper .image-block{
+    display: flex;
+}
+.whare-to-find-us-wrapper .image-block .image1 {
+    width: 100%;
+    height: 450px;
+    background-color: blue;
+    background-image: url(../images/restaurant.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-inline-end: 10px;
+}
+.whare-to-find-us-wrapper .image-block .image2{
+    width: 100%;
+    height: 450px;
+    background-color: green;
+    background-image: url(../images/05.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+.whare-to-find-us-wrapper .whare-to-find-us-heading {
+    margin-block-end: 8px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whare-to-find-us-wrapper .whare-to-find-us-heading p{
+    color: #F8C189;
+    font-size: 15px;
+    font-weight: 500;
+     font-family: 'Poppins', sans-serif; 
+     margin: 0;
+}
+.whare-to-find-us-wrapper .whare-to-find-us-heading h2 {
+    color: #fff;
+    font-size: 64px;
+    font-weight: 700;
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+}
+
+.whare-to-find-us-wrapper  h3 {
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+    max-width: 362px;
+    margin-block-end: 22px;
+}
+.whare-to-find-us-wrapper  a {
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid #F8C189;
+    padding-inline: 10px;
+    padding-block: 8px;
+    border-radius: 5px;
+    transition: all 0.5s;
+    margin-block-start: 19px;
+}
+.whare-to-find-us-wrapper .whare-to-find-us-heading span{
+    display: block;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>> FOOTER  >>>>>>>>>>>> */
+
+footer {
+    background-color: yellow;
+    background-image: linear-gradient( rgb(0 0 0 / 59%), rgb(0 0 0 / 95%) ),  url(../images/hotel-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+footer .footer-wrapper {
+    padding-inline: 25px;
+    padding-block-start: 64px;
+    
+}
+footer .footer-wrapper .opening-hours-heading h2 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 29px;
+    font-family: 'Poppins', sans-serif;
+}
+footer .footer-wrapper .opening-hours .opening-hours-date-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .footer-wrapper .opening-hours .opening-hours-date-time .lt p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    margin-bottom: 13px;
+}
+footer .footer-wrapper .opening-hours .opening-hours-date-time .rt p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .footer-wrapper .opening-hours-date-time-happy-hour{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .footer-wrapper .opening-hours-date-time-happy-hour .lt p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+footer .footer-wrapper .opening-hours-date-time-happy-hour .rt p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+footer .footer-wrapper .footer-logo-block .logo-block .top-block{
+    text-align: center;
+}
+footer .footer-wrapper .footer-logo-block .logo-block .top-block h2{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+footer .footer-wrapper .footer-logo-block .logo-block .top-block p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+footer .footer-wrapper .footer-logo-block .logo-block .bottom-block{
+    text-align: center;
+
+}
+footer .footer-wrapper .footer-logo-block .logo-block .bottom-block p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 0;
+}
+footer .footer-wrapper .footer-logo-block .logo-block .bottom-block a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+footer .footer-wrapper .footer-logo-block .icon-block {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-block-start: 11px;
+}
+footer .footer-wrapper .footer-logo-block .icon-block a i{
+    color: #fff;
+    font-size: 22px;
+}
+footer .footer-wrapper .newsletter h2{
+    color: #fff;
+    font-weight: bold;
+    font-size: 29px;
+    font-family: 'Poppins', sans-serif;
+}
+footer .footer-wrapper .newsletter p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+footer .footer-wrapper .newsletter .footer-input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .footer-wrapper  .footer-input input {
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    border: navajowhite;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    width: 58%;
+    margin-block-end: 14px;
+    color: #fff;
+}
+footer .footer-wrapper  .footer-input i{
+    color: #fff;
+}
+footer .footer-wrapper .news-letter-wrapper{
+    text-align: center;
+}
+footer .footer-wrapper  .footer-input input::placeholder{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+footer .footer-wrapper label {
+    color: #fff;
+    font-size: 25px;
+}
+footer .footer-wrapper .all-rights-reserved {
+    margin-block-start: 100px;
+    border-top: 1px solid #ffffff6b;
+    padding-top: 65px;
+    padding-block-end: 54px;
+}
+footer .footer-wrapper .all-rights-reserved .restaurant-cafe p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+footer .footer-wrapper .all-rights-reserved .footer-nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+footer .footer-wrapper .all-rights-reserved .footer-nav ul li a{
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+}
+footer .footer-wrapper .copyright p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: end;
+    margin: 0;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>> MEDIA QUERY  >>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media screen and ( max-width: 1449px) {
+.banner-wrapper .header-wrapper .lt-block{
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+}
+    .banner-wrapper .header-wrapper .logo-block a {
+    padding: 0;
+    padding-block-end: 29px;
+    padding-block-start: 27px;
+}
+
+}
+@media screen and ( max-width: 1200px) {
+.banner-wrapper .banner-content .banner-text h1{
+    font-size: 60px;
+}
+.banner-wrapper .banner-content .banner-text p{
+    font-size: 21px;
+}
+.banner-wrapper{
+    height: 550px;
+}
+/*.banner-wrapper .banner-content {
+    height: 550px;
+}*/
+.pizza-menu-wrapper .pizza-menu-heading h2 {
+    font-size: 55px;
+}
+.pizza-menu-wrapper{
+    padding-block-end: 49px;
+}
+.margherit-pizza-wrapper .text-block h2{
+    font-size: 45px;
+}
+.margherit-pizza-wrapper .text-block p {
+    padding-block-end: 29px;
+    padding-block-start: 14px;
+    font-size: 19px;
+}
+.margherit-pizza-wrapper .top-block .rt p{
+    font-size: 35px;
+}
+.margherit-pizza-wrapper .price .top-block .lt span {
+    width: 117px;
+    height: 41px;
+}
+.margherit-pizza-wrapper .price .bottom-block .lt span{
+    width: 117px;
+    height: 41px;
+}
+.margherit-pizza-wrapper .bottom-block .rt p{
+    font-size: 35px;
+}
+.classic-burrata-pizza-wrapper .text-block h2{
+    font-size: 45px;
+}
+.classic-burrata-pizza-wrapper .text-block p {
+    padding-block-end: 29px;
+    padding-block-start: 14px;
+    font-size: 19px;
+}
+.classic-burrata-pizza-wrapper .top-block .rt p{
+    font-size: 35px;
+}
+.classic-burrata-pizza-wrapper .bottom-block .rt p{
+    font-size: 35px;
+}
+.classic-burrata-pizza-wrapper .price .top-block .lt span{
+    width: 117px;
+    height: 41px;
+}
+.classic-burrata-pizza-wrapper .price .bottom-block .lt span{
+    width: 117px;
+    height: 41px;
+}
+.capricciosa-pizza-wrapper .text-block h2{
+    font-size: 45px;
+}
+.capricciosa-pizza-wrapper .text-block p{
+    font-size: 19px;
+    padding-block-end: 29px;
+    padding-block-start: 14px;
+}
+.capricciosa-pizza-wrapper .top-block .rt p{
+    font-size: 35px;
+}
+.capricciosa-pizza-wrapper .bottom-block .rt p{
+    font-size: 35px;
+}
+.capricciosa-pizza-wrapper .price .top-block .lt span{
+    width: 117px;
+    height: 41px;
+}
+.capricciosa-pizza-wrapper .price .bottom-block .lt span{
+    width: 117px;
+    height: 41px;
+}
+.siciliana-pizza-wrapper .text-block h2{
+    font-size: 45px;
+}
+.siciliana-pizza-wrapper .text-block p{
+    font-size: 19px;
+    padding-block-end: 29px;
+    padding-block-start: 14px;
+}
+.siciliana-pizza-wrapper .top-block .rt p{
+    font-size: 35px;
+}
+.siciliana-pizza-wrapper .bottom-block .rt p{
+    font-size: 35px;
+}
+.siciliana-pizza-wrapper .price .top-block .lt span{
+    width: 117px;
+    height: 41px;
+}
+.siciliana-pizza-wrapper .price .bottom-block .lt span{
+    width: 117px;
+    height: 41px;
+}
+.popular-items-wrapper .text-block p{
+    font-size: 13px;
+}
+.popular-items-wrapper .popular-items-heading h2{
+    font-size: 55px;
+}
+.the-full-menu-wrapper .the-full-menu-heading h2{
+    font-size: 55px;
+}
+.nutrition-and-taste-wrapper .nutrition-and-taste-heading h2{
+    font-size: 55px;
+}
+.whare-to-find-us-wrapper .whare-to-find-us-heading h2{
+    font-size: 55px;
+}
+
+
+
+
+}
+
+@media screen and ( max-width: 992px)  {
+.margherit-pizza-wrapper .text-block {
+    text-align: center;
+    margin-block-start: 13px;
+}
+.margherit-pizza-wrapper .price .top-block{
+    justify-content: center;
+}
+.margherit-pizza-wrapper .price .bottom-block{
+    justify-content: center;
+}
+.classic-burrata-pizza-wrapper .row{
+    flex-direction: column-reverse;
+}
+
+.classic-burrata-pizza-wrapper .text-block{
+    text-align: center;
+    margin-block-start: 13px;
+}
+.classic-burrata-pizza-wrapper .price .top-block{
+    justify-content: center;
+}
+.classic-burrata-pizza-wrapper .price .bottom-block{
+    justify-content: center;
+}
+.capricciosa-pizza-wrapper .text-block{
+    text-align: center;
+    margin-block-start: 13px;
+}
+.capricciosa-pizza-wrapper .price .top-block{
+    justify-content: center;
+}
+.capricciosa-pizza-wrapper .price .bottom-block{
+    justify-content: center;
+}
+.siciliana-pizza-wrapper .row{
+    flex-direction: column-reverse;
+}
+.siciliana-pizza-wrapper .text-block{
+    text-align: center;
+    margin-block-start: 13px;
+}
+.siciliana-pizza-wrapper .price .top-block{
+    justify-content: center;
+}
+.siciliana-pizza-wrapper .price .bottom-block{
+    justify-content: center;
+}
+.siciliana-pizza-wrapper .image-block {
+    width: 60%;
+    height: auto;
+    margin-inline: auto;
+}
+.capricciosa-pizza-wrapper .image-block {
+    width: 60%;
+    height: auto;
+    margin-inline: auto;
+}
+.margherit-pizza-wrapper .image-block {
+    width: 60%;
+    height: auto;
+    margin-inline: auto;
+}
+.classic-burrata-pizza-wrapper .image-block {
+    width: 60%;
+    height: auto;
+    margin-inline: auto;
+}
+.popular-items-wrapper .popular-items-heading {
+    text-align: center;
+    margin-block-end: 40px;
+}
+.popular-items-wrapper .popular-items-heading h2 {
+    font-size: 45px;
+}
+.popular-items-wrapper .text-block p{
+    max-width: 400px;
+}
+.popular-items-wrapper .image-block img{
+    border-radius: 0;
+}
+.the-full-menu-wrapper .the-full-menu-heading h2 {
+    font-size: 45px;
+}
+.the-full-menu-wrapper .menu-starters h3{
+    text-align: center;
+}
+.the-full-menu-wrapper .col-lg-6.col-md-12{
+
+}
+.the-full-menu-wrapper .menu-starters h3 {
+    margin-block-start: 63px;
+}
+.nutrition-and-taste-wrapper .nutrition-and-taste-heading h2 {
+    font-size: 45px;
+}
+.nutrition-and-taste-wrapper .text-block h3{
+    max-width: 100%;
+}
+.banner-wrapper .banner-content {
+    /* height: 550px; */
+}
+.banner-wrapper .header-wrapper{
+    padding-inline: 40px;
+}
+
+footer .footer-wrapper .restaurant-cafe{
+    text-align: center;
+}
+footer .footer-wrapper .copyright p{
+    text-align: center;
+}
+footer .footer-wrapper .all-rights-reserved {
+    padding-top: 27px;
+    padding-block-end: 25px;
+}
+footer .footer-wrapper .all-rights-reserved {
+    margin-block-start: 65px;
+}
+footer .footer-wrapper .news-letter-wrapper {
+    text-align: center;
+    margin-block-start: 60px;
+}
+footer .footer-wrapper .opening-hours .opening-hours-date-time {
+    gap: 140px;
+    justify-content: center;
+}
+footer .footer-wrapper .opening-hours-date-time-happy-hour {
+    justify-content: center;
+    gap: 140px;
+}
+.footer-logo-block{
+    margin-block-start: 50px;
+}
+footer {
+    background-image: linear-gradient( rgb(0 0 0 / 68%), rgb(0 0 0 / 95%) ),  url(../images/hotel-2.jpg);
+}
+footer .footer-wrapper .opening-hours-heading h2{
+    text-align: center;
+}
+.whare-to-find-us-wrapper {
+    padding-block: 10px;
+}
+.nutrition-and-taste-wrapper .image-block .image-1{
+    width: 100%;
+}
+.nutrition-and-taste-wrapper .nutrition-and-taste-heading {
+    margin-block-end: 8px;
+    text-align: center;
+}
+.banner-wrapper .header-wrapper .logo-block a {
+    width: 210px;
+    padding: 0;
+    padding-block-end: 17px;
+    padding-block-start: 17px;
+}
+.banner-wrapper .header-wrapper .logo-block a img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+}
+
+@media screen and ( max-width: 768px) {
+.banner-wrapper .header-wrapper {
+    flex-direction: column;
+    padding-block-end: 25px;
+}
+.banner-wrapper .header-wrapper .lt-block{
+    align-items: center!important;
+}
+.banner-wrapper .header-wrapper .logo-block a {
+    padding-block-end: 12px;
+    padding-block-start: 11px;
+}
+.banner-wrapper .banner-content .banner-text h1 {
+    font-size: 44px;
+}
+.banner-wrapper {
+    height: 433px;
+}
+.banner-wrapper .banner-content {
+    height: 538px;
+}
+.nutrition-and-taste-wrapper .image-block .image-2 {
+    height: 350px;
+    width: 80%;
+    background-color: yellow;
+    position: absolute;
+    top: 164px;
+    left: 50%;
+    transform: translate(-50%);
+    background-image: url(
+    ../images/0123.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-inline-end: 0;
+}
+
+
+
+
+} 
+
+@media screen and ( max-width: 575px) {
+.banner-wrapper .header-wrapper .nav-block nav ul{
+
+}
+.banner-wrapper .header-wrapper .mobile-menu {
+    display: block;
+    width: 155px;
+    background: #ee8800bf;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    padding-block: 9px;
+    margin-block-start: 11px;
+}
+.banner-wrapper .header-wrapper .mobile-menu:active{
+    transform: scale(0.96);
+}
+.banner-wrapper .header-wrapper .mobile-menu img {
+    width: 36px;
+}
+.banner-wrapper .header-wrapper .nav-block nav ul{
+    display: none;
+}
+.banner-wrapper {
+    height: 396px;
+}
+.pizza-menu-wrapper .pizza-menu-heading h2 {
+    font-size: 35px;
+}
+.pizza-menu-wrapper {
+    padding-block-end: 14px;
+}
+.margherit-pizza-wrapper .design-element .triangle-pizza img {
+    overflow-x: hidden;
+    width: 81px;
+}
+.margherit-pizza-wrapper .design-element .rounded-single-pizza img {
+    overflow-x: hidden;
+    width: 69px;
+}
+.margherit-pizza-wrapper .design-element .rounded-three-pizza img {
+    overflow-x: hidden;
+    width: 101px;
+}
+.margherit-pizza-wrapper .text-block h2 {
+    font-size: 35px;
+}
+.margherit-pizza-wrapper .text-block p {
+    padding-block-end: 12px;
+    padding-block-start: 9px;
+    font-size: 19px;
+    font-weight: 400;
+}
+.margherit-pizza-wrapper .top-block .rt p {
+    font-size: 27px;
+}
+.margherit-pizza-wrapper .price .top-block .lt span {
+    width: 110px;
+    height: 40px;
+}
+.margherit-pizza-wrapper .price .bottom-block .lt span{
+    width: 110px;
+    height: 40px;
+}
+.margherit-pizza-wrapper .bottom-block .rt p {
+    font-size: 27px;
+}
+.margherit-pizza-wrapper .price .bottom-block {
+    justify-content: center;
+    margin-block-start: 10px;
+}
+.margherit-pizza-wrapper .text-block {
+    border-bottom: 1px solid #dddddd45;
+    padding-block-end: 36px;
+}
+.classic-burrata-pizza-wrapper .text-block h2 {
+    font-size: 35px;
+}
+.classic-burrata-pizza-wrapper .text-block p {
+    padding-block-end: 13px;
+    padding-block-start: 14px;
+    font-size: 17px;
+}
+.classic-burrata-pizza-wrapper .top-block .rt p {
+    font-size: 27px;
+}
+.classic-burrata-pizza-wrapper .bottom-block .rt p {
+    font-size: 27px;
+}
+.classic-burrata-pizza-wrapper .price .top-block .lt span {
+    width: 110px;
+    height: 40px;
+}
+.classic-burrata-pizza-wrapper .price .bottom-block .lt span {
+    width: 110px;
+    height: 40px;
+    margin-block-start: 10px;
+}
+.classic-burrata-pizza-wrapper .text-block{
+    border-bottom: 1px solid #dddddd45;
+    padding-block-end: 36px;
+}
+
+.capricciosa-pizza-wrapper .text-block h2{
+    font-size: 35px;
+}
+
+.capricciosa-pizza-wrapper .text-block p {
+    padding-block-end: 13px;
+    padding-block-start: 14px;
+    font-size: 17px;
+}
+.capricciosa-pizza-wrapper .top-block .rt p {
+    font-size: 27px;
+}
+.capricciosa-pizza-wrapper .bottom-block .rt p {
+    font-size: 27px;
+}
+.capricciosa-pizza-wrapper .price .top-block .lt span {
+    width: 110px;
+    height: 40px;
+}
+.capricciosa-pizza-wrapper .price .bottom-block .lt span {
+    width: 110px;
+    height: 40px;
+    margin-block-start: 10px;
+}
+.capricciosa-pizza-wrapper .text-block{
+    border-bottom: 1px solid #dddddd45;
+    padding-block-end: 36px;
+}
+
+
+
+
+.capricciosa-pizza-wrapper .text-block h2{
+    font-size: 35px;
+}
+
+.capricciosa-pizza-wrapper .text-block p {
+    padding-block-end: 13px;
+    padding-block-start: 14px;
+    font-size: 17px;
+}
+.capricciosa-pizza-wrapper .top-block .rt p {
+    font-size: 27px;
+}
+.capricciosa-pizza-wrapper .bottom-block .rt p {
+    font-size: 27px;
+}
+.capricciosa-pizza-wrapper .price .top-block .lt span {
+    width: 110px;
+    height: 40px;
+}
+.capricciosa-pizza-wrapper .price .bottom-block .lt span {
+    width: 110px;
+    height: 40px;
+    margin-block-start: 10px;
+}
+.capricciosa-pizza-wrapper .text-block{
+    border-bottom: 1px solid #dddddd45;
+    padding-block-end: 36px;
+} .text-block h2{
+    font-size: 35px;
+}
+
+.capricciosa-pizza-wrapper .text-block h2{
+    font-size: 35px;
+}
+
+.capricciosa-pizza-wrapper .text-block p {
+    padding-block-end: 13px;
+    padding-block-start: 14px;
+    font-size: 17px;
+}
+.capricciosa-pizza-wrapper .top-block .rt p {
+    font-size: 27px;
+}
+.capricciosa-pizza-wrapper .bottom-block .rt p {
+    font-size: 27px;
+}
+.capricciosa-pizza-wrapper .price .top-block .lt span {
+    width: 110px;
+    height: 40px;
+}
+.capricciosa-pizza-wrapper .price .bottom-block .lt span {
+    width: 110px;
+    height: 40px;
+    margin-block-start: 10px;
+}
+.capricciosa-pizza-wrapper .text-block{
+    border-bottom: 1px solid #dddddd45;
+    padding-block-end: 36px;
+} .text-block p {
+    padding-block-end: 13px;
+    padding-block-start: 14px;
+    font-size: 17px;
+}
+.capricciosa-pizza-wrapper .text-block h2{
+    font-size: 35px;
+}
+
+.capricciosa-pizza-wrapper .text-block p {
+    padding-block-end: 13px;
+    padding-block-start: 14px;
+    font-size: 17px;
+}
+.capricciosa-pizza-wrapper .top-block .rt p {
+    font-size: 27px;
+}
+.capricciosa-pizza-wrapper .bottom-block .rt p {
+    font-size: 27px;
+}
+.capricciosa-pizza-wrapper .price .top-block .lt span {
+    width: 110px;
+    height: 40px;
+}
+.capricciosa-pizza-wrapper .price .bottom-block .lt span {
+    width: 110px;
+    height: 40px;
+    margin-block-start: 10px;
+}
+.capricciosa-pizza-wrapper .text-block{
+    border-bottom: 1px solid #dddddd45;
+    padding-block-end: 36px;
+} .top-block .rt p {
+    font-size: 27px;
+}
+.capricciosa-pizza-wrapper .text-block h2{
+    font-size: 35px;
+}
+
+.capricciosa-pizza-wrapper .text-block p {
+    padding-block-end: 13px;
+    padding-block-start: 14px;
+    font-size: 17px;
+}
+.capricciosa-pizza-wrapper .top-block .rt p {
+    font-size: 27px;
+}
+.capricciosa-pizza-wrapper .bottom-block .rt p {
+    font-size: 27px;
+}
+.capricciosa-pizza-wrapper .price .top-block .lt span {
+    width: 110px;
+    height: 40px;
+}
+.capricciosa-pizza-wrapper .price .bottom-block .lt span {
+    width: 110px;
+    height: 40px;
+    margin-block-start: 10px;
+}
+.capricciosa-pizza-wrapper .text-block{
+    border-bottom: 1px solid #dddddd45;
+    padding-block-end: 36px;
+} .bottom-block .rt p {
+    font-size: 27px;
+}
+.capricciosa-pizza-wrapper .text-block h2{
+    font-size: 35px;
+}
+
+.capricciosa-pizza-wrapper .text-block p {
+    padding-block-end: 13px;
+    padding-block-start: 14px;
+    font-size: 17px;
+}
+.capricciosa-pizza-wrapper .top-block .rt p {
+    font-size: 27px;
+}
+.capricciosa-pizza-wrapper .bottom-block .rt p {
+    font-size: 27px;
+}
+.capricciosa-pizza-wrapper .price .top-block .lt span {
+    width: 110px;
+    height: 40px;
+}
+.capricciosa-pizza-wrapper .price .bottom-block .lt span {
+    width: 110px;
+    height: 40px;
+    margin-block-start: 10px;
+}
+.capricciosa-pizza-wrapper .text-block{
+    border-bottom: 1px solid #dddddd45;
+    padding-block-end: 36px;
+} .price .top-block .lt span {
+    width: 110px;
+    height: 40px;
+}
+..capricciosa-pizza-wrapper .text-block h2{
+    font-size: 35px;
+}
+
+.capricciosa-pizza-wrapper .text-block p {
+    padding-block-end: 13px;
+    padding-block-start: 14px;
+    font-size: 17px;
+}
+.capricciosa-pizza-wrapper .top-block .rt p {
+    font-size: 27px;
+}
+.capricciosa-pizza-wrapper .bottom-block .rt p {
+    font-size: 27px;
+}
+.capricciosa-pizza-wrapper .price .top-block .lt span {
+    width: 110px;
+    height: 40px;
+}
+.capricciosa-pizza-wrapper .price .bottom-block .lt span {
+    width: 110px;
+    height: 40px;
+    margin-block-start: 10px;
+}
+.capricciosa-pizza-wrapper .text-block{
+    border-bottom: 1px solid #dddddd45;
+    padding-block-end: 36px;
+} .price .bottom-block .lt span {
+    width: 110px;
+    height: 40px;
+    margin-block-start: 10px;
+}
+.siciliana-pizza-wrapper .text-block h2{
+    font-size: 35px;
+}
+
+.siciliana-pizza-wrapper .text-block p {
+    padding-block-end: 13px;
+    padding-block-start: 14px;
+    font-size: 17px;
+}
+.siciliana-pizza-wrapper .top-block .rt p{
+    font-size: 27px;
+}
+
+.siciliana-pizza-wrapper .bottom-block .rt p {
+    font-size: 27px;
+}
+.siciliana-pizza-wrapper .price .top-block .lt span {
+    width: 110px;
+    height: 40px;
+}
+.siciliana-pizza-wrapper .price .bottom-block .lt span {
+    width: 110px;
+    height: 40px;
+    margin-block-start: 10px;
+}
+.siciliana-pizza-wrapper .text-block{
+    border-bottom: 1px solid #dddddd45;
+    padding-block-end: 36px;
+} 
+.text-block{
+    border-bottom: 1px solid #dddddd45;
+    padding-block-end: 36px;
+}
+.siciliana-pizza-wrapper {
+    padding-block-end: 40px;
+}
+.popular-items-wrapper .popular-items-heading h2 {
+    font-size: 35px;
+}
+.popular-items-wrapper .text-block p {
+    max-width: 100%; 
+}
+.popular-items-wrapper .text-block .items-name-price .lt h2 {
+    font-weight: 500;
+}
+.the-full-menu-wrapper .the-full-menu-heading {
+    text-align: center;
+     margin-block-end: 0; 
+    padding-block-start: 35px;
+}
+.the-full-menu-wrapper .the-full-menu-heading h2 {
+    font-size: 35px;
+}
+.the-full-menu-wrapper .menu-starters h3 {
+  
+    font-size: 35px;
+   
+}
+.the-full-menu-wrapper .menu-starters .menu-starters-items {
+    margin-block-start: 26px;
+}
+.the-full-menu-wrapper .menu-starters h3 {
+    margin-block-end: 16px;
+}
+.the-full-menu-wrapper .menu-starters .menu-starters-items .starters-items .rt h4 {
+    font-size: 15px;
+    
+}
+.the-full-menu-wrapper .menu-starters .menu-starters-items .starters-items .rt h5 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.the-full-menu-wrapper .the-full-menu-order {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-block-end: 66px;
+    margin-block-start: 47px;
+}
+.video-block-wrapper {
+    height: 362px;
+}
+.video-block-wrapper img {
+    transition: 0.5s;
+    width: 65px;
+}
+.nutrition-and-taste-wrapper .nutrition-and-taste-heading h2 {
+    font-size: 35px;
+}
+.nutrition-and-taste-wrapper {
+    background-color: #040507;
+    padding-block-end: 184px;
+    padding-block-start: 33px;
+}
+.whare-to-find-us-wrapper .whare-to-find-us-heading h2 {
+    font-size: 35px;
+}
+.text-block {
+    border-bottom: none;
+    padding-block-end: 30px;
+}
+.text-block p {
+    padding-block-start: 30px;
+}
+
+
+
+
+
+}
+@media screen and ( max-width: 547px) {
+.banner-wrapper .header-wrapper {
+    padding-inline: 26px;
+}
+
+
+
+
+} 
+
+@media screen and ( max-width: 480px) {
+footer .footer-wrapper .all-rights-reserved .footer-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+.banner-wrapper .banner-content .banner-text h1 {
+    font-size: 35px;
+}
+footer .footer-wrapper .opening-hours .opening-hours-date-time {
+    gap: 113px;
+    justify-content: center;
+}
+
+
+}
+
+@media screen and ( max-width: 370px) {
+footer .footer-wrapper .newsletter h2 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+.banner-wrapper .header-wrapper {
+    flex-direction: column;
+    padding-block-end: 20px;
+}
+.banner-wrapper .header-wrapper .mobile-menu img {
+    width: 29px;
+}
+.banner-wrapper .header-wrapper .mobile-menu {
+    width: 123px;
+    border-radius: 4px;
+}
+.banner-wrapper .banner-content .banner-text h1 {
+    font-size: 35px;
+}
+.banner-wrapper .banner-content .banner-text p {
+    font-size: 16px;
+}
+.pizza-menu-wrapper .pizza-menu-heading h2 {
+    font-size: 28px;
+}
+.pizza-menu-wrapper .pizza-menu-heading p {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.margherit-pizza-wrapper .text-block h2 {
+    font-size: 30px;
+}
+.margherit-pizza-wrapper .text-block p {
+    font-size: 14px;
+    font-weight: 300;
+}
+.classic-burrata-pizza-wrapper .text-block h2 {
+    font-size: 30px;
+}
+.classic-burrata-pizza-wrapper .text-block p {
+    padding-block-end: 13px;
+    padding-block-start: 14px;
+    font-size: 14px;
+}
+.capricciosa-pizza-wrapper .text-block p {
+    padding-block-end: 13px;
+    padding-block-start: 14px;
+    font-size: 14px;
+}
+.capricciosa-pizza-wrapper .text-block h2 {
+    font-size: 30px;
+}
+.siciliana-pizza-wrapper .text-block h2 {
+    font-size: 30px;
+}
+.siciliana-pizza-wrapper .text-block p {
+    padding-block-end: 13px;
+    padding-block-start: 14px;
+    font-size: 14px;
+}
+.popular-items-wrapper .popular-items-heading h2 {
+    font-size: 30px;
+}
+.popular-items-wrapper .popular-items-heading p {
+    color: #F8C189;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.popular-items-wrapper .popular-items-heading {
+    text-align: center;
+    margin-block-end: 24px;
+}
+.text-block p {
+    padding-block-start: 4px;
+}
+.the-full-menu-wrapper .the-full-menu-heading h2 {
+    font-size: 30px;
+}
+.the-full-menu-wrapper .the-full-menu-heading p {
+    color: #F8C189;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.the-full-menu-wrapper .menu-starters h3 {
+    font-size: 30px;
+}
+.the-full-menu-wrapper .menu-starters .menu-starters-items .starters-items .rt h4 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    margin-block-end: 8px;
+}
+.the-full-menu-wrapper .menu-starters .menu-starters-items .starters-items .rt h5 {
+    color: #fff;
+    font-weight: 200;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.the-full-menu-wrapper .menu-starters .menu-starters-items .starters-items {
+    
+    flex-direction: column;
+}
+.the-full-menu-wrapper .menu-starters .menu-starters-items{
+    flex-direction: column;
+}
+.the-full-menu-wrapper .menu-starters .menu-starters-items .starters-items .rt{
+    text-align: center;
+}
+.the-full-menu-wrapper .the-full-menu-order a {
+    font-size: 13px;
+}
+.the-full-menu-wrapper .the-full-menu-order {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-block-end: 45px;
+    margin-block-start: 27px;
+}
+.nutrition-and-taste-wrapper .nutrition-and-taste-heading h2 {
+    font-size: 30px;
+}
+.text-block p {
+    padding-block-end: 5px;
+    padding-block-start: 14px;
+    font-size: 17px;
+}
+.nutrition-and-taste-wrapper .image-block .image-2 {
+    height: 269px;
+    width: 89%;
+    background-color: yellow;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%);
+    background-image: url(
+    ../images/0123.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-inline-end: 0;
+}
+.whare-to-find-us-wrapper .whare-to-find-us-heading h2 {
+    font-size: 30px;
+}
+footer .footer-wrapper {
+    padding-inline: 25px;
+    padding-block-start: 30px;
+}
+footer .footer-wrapper .opening-hours-heading h2 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+}
+
+
+
+
+
